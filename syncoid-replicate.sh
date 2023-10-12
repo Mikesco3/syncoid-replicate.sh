@@ -19,7 +19,7 @@ SYNC_COMMAND "$FROM" "$TO"
 
 # Check if the syncoid command was successful
 if [ "$?" -eq 0 ]; then
- "Sync completed successfully."
+ # "Sync completed successfully."
 else
   echo "Sync encountered an error."
 fi
