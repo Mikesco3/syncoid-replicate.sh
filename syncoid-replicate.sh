@@ -22,7 +22,7 @@ SYNC_COMMAND "$FROM" "$TO"
 # Check if the syncoid command was successful
 if [ "$?" -eq 0 ]; then
  ## if you want output, uncomment the next two lines
- # echo "Sync completed successfully."
-# else
+  echo "Sync completed successfully."
+else
   echo "Sync encountered an error."
 fi
