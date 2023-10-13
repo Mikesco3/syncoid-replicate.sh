@@ -11,7 +11,9 @@ TO="$2"
 
 # Defined a function to store the syncoid command and options
 SYNC_COMMAND() {
-  /usr/sbin/syncoid --force-delete --quiet --no-clone-handling --delete-target-snapshots "$@"
+  /usr/sbin/syncoid --force-delete --quiet --no-clone-handling  "$@"
+  ## If you want output, comment the previous line and uncomment the following one.
+  # /usr/sbin/syncoid --force-delete --no-clone-handling  "$@"
 }
 
 # Sync the ZFS datasets
@@ -19,7 +21,8 @@ SYNC_COMMAND "$FROM" "$TO"
 
 # Check if the syncoid command was successful
 if [ "$?" -eq 0 ]; then
- # "Sync completed successfully."
-else
+ ## if you want output, uncomment the next two lines
+ # echo "Sync completed successfully."
+# else
   echo "Sync encountered an error."
 fi
