@@ -16,6 +16,9 @@ Before using this script, ensure the following prerequisites are met:
 To use the "syncoid-replicate.sh" script, follow these steps:
 
 1. Download the script to your system.
+   ``` shell
+   wget https://raw.githubusercontent.com/Mikesco3/syncoid-replicate.sh/main/syncoid-replicate.sh
+   ```
 2. Make the script executable using the following command:
    ```shell
    chmod +x syncoid-replicate.sh
