@@ -39,8 +39,9 @@ crontab -e
 ```
 2. Add a line to schedule the script, providing the full path to the script and the desired schedule. For example, to run the script daily at midnight:
 ``` shell
-0 0 * * * /path/to/syncoid-replicate.sh fast200/vm-vmname rpool/vm-vmname
+0 0 * * * (/path/to/syncoid-replicate.sh fast200/vm-vmname rpool/vm-vmname) > /dev/null
 ```
+_Running the `(command) > /dev/null` supresses regular output and only produces output if there are any error messages_
 Save the file.
 
 ## Troubleshooting
