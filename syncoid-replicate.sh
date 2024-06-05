@@ -11,7 +11,7 @@ TO="$2"
 
 # Defined a function to store the syncoid command and options
 SYNC_COMMAND() {
-  /usr/sbin/syncoid --force-delete --quiet --no-clone-handling  "$@"
+  /usr/sbin/syncoid --force-delete --quiet --no-clone-handling --no-sync-snap  "$@"
   ## If you want output, comment the previous line and uncomment the following one.
   # /usr/sbin/syncoid --force-delete --no-clone-handling  "$@"
 }
