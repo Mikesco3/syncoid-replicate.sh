@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Check if at least source and destination are provided as arguments
 if [ "$#" -lt 2 ] || [ "$#" -gt 3 ]; then
