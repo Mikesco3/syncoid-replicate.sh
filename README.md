@@ -27,7 +27,7 @@ To use the "syncoid-replicate.sh" script, follow these steps:
 ``` shell
 ./syncoid-replicate.sh fast200/vm-vdisk-0 rpool/vm-shadow-of-vdisk-0
 ```
-Replace `fast200/vm-vmname` with your source dataset and `rpool/vm-vmname` with your destination dataset.
+Replace `fast200/vm-vdiak` with your source and destination datasets.
 4. The script will use `syncoid` to replicate the dataset, and you will be notified of the replication status (success or failure).
 
 ## Scheduling Replication
